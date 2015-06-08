@@ -10,8 +10,11 @@ public class FerramentaCirculo extends Ferramenta {
 	}
 	
 	@Override
-	public Figura criaFigura(int x, int y) {
-		return new Circulo(x, y, 40);
+	public Figura criaFigura(int x1, int y1, int x2, int y2) {
+		int dx = Math.abs(x2 - x1);
+		int dy = Math.abs(y2 - y1);
+		int raio = (int) Math.sqrt(dx * dx + dy * dy);
+		return new Circulo(x1 - raio, y1 - raio, raio);
 	}
 
 	@Override

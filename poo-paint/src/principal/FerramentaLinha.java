@@ -10,8 +10,8 @@ public class FerramentaLinha extends Ferramenta {
 	}
 
 	@Override
-	public Figura criaFigura(int x, int y) {
-		return new Linha(x, y, x + 10, y + 10);
+	public Figura criaFigura(int x1, int y1, int x2, int y2) {
+		return new Linha(x1, y1, x2, y2);
 	}
 
 	@Override

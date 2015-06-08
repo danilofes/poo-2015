@@ -12,6 +12,7 @@ import figuras.Figura;
 public class AreaDeDesenho extends JPanel {
 
 	private List<Figura> figuras;
+	private Figura sombra = null;
 	
 	public AreaDeDesenho() {
 		this.figuras = new ArrayList<Figura>();
@@ -25,10 +26,17 @@ public class AreaDeDesenho extends JPanel {
 		for (Figura f : figuras) {
 			f.desenha(g);
 		}
+		if (this.sombra != null) {
+			this.sombra.desenha(g);
+		}
 	}
 
 	public void adicionaFigura(Figura f) {
 		this.figuras.add(f);
+	}
+
+	public void setSombra(Figura sombra) {
+		this.sombra = sombra;
 	}
 
 }

@@ -2,7 +2,8 @@ package figuras;
 
 import java.awt.Graphics;
 
-public class Figura {
+
+public abstract class Figura {
 
 	protected int x;
 	protected int y;
@@ -32,7 +33,5 @@ public class Figura {
 		this.y = y;
 	}
 	
-	public void desenha(Graphics g) {
-		//
-	}
+	public abstract void desenha(Graphics g);
 }
