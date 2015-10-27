@@ -1,5 +1,6 @@
 package principal;
 
+import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.util.ArrayList;
@@ -22,6 +23,7 @@ public class AreaDeDesenho extends JPanel {
 	@Override
 	protected void paintComponent(Graphics g) {
 		super.paintComponent(g);
+		g.setColor(Color.BLUE);
 		// desenha algumas figuras
 		for (Figura f : figuras) {
 			f.desenha(g);
