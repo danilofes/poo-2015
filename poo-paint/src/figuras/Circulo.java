@@ -21,6 +21,7 @@ public class Circulo extends Figura {
 
 	@Override
 	public void desenha(Graphics g) {
-		g.drawOval(x, y, raio * 2, raio * 2);
+		int diametro = raio * 2;
+		g.drawOval(x, y, diametro, diametro);
 	}
 }

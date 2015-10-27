@@ -15,8 +15,7 @@ public class Paint extends JFrame {
 		JPanel painelPrincipal = new JPanel();
 		painelPrincipal.setLayout(new BorderLayout());
 		
-		BarraDeFerramentas barraDeFerramentas = new BarraDeFerramentas(); 
-		painelPrincipal.add(barraDeFerramentas, BorderLayout.PAGE_START);
+		BarraDeFerramentas barraDeFerramentas = new BarraDeFerramentas().inicializaBarraDeFerramenta(painelPrincipal);
 		
 		AreaDeDesenho areaDeDesenho = new AreaDeDesenho();
 		painelPrincipal.add(areaDeDesenho, BorderLayout.CENTER);

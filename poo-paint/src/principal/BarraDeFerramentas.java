@@ -1,6 +1,9 @@
 package principal;
 
+import java.awt.BorderLayout;
+
 import javax.swing.ButtonGroup;
+import javax.swing.JPanel;
 import javax.swing.JToggleButton;
 import javax.swing.JToolBar;
 
@@ -42,6 +45,11 @@ public class BarraDeFerramentas extends JToolBar {
 
 	public void setFerramentaAtiva(Ferramenta ferramenta) {
 		this.ferramenta = ferramenta;
+	}
+
+	public BarraDeFerramentas inicializaBarraDeFerramenta(JPanel painelPrincipal) {
+		painelPrincipal.add(this, BorderLayout.PAGE_START);
+		return this;
 	}
 
 }
