@@ -14,7 +14,7 @@ public class Retangulo extends Figura {
 	}
 
 	public String imprime() {
-		return "retangulo[X:"+this.x+",Y:"+this.y+",l:"+this.largura+",a:"+this.altura+"]";
+		return "Retangulo[X:"+this.x+",Y:"+this.y+",l:"+this.largura+",a:"+this.altura+"]";
 	}
 
 	public int getAltura() {
